@@ -63,7 +63,7 @@ status-website:
       --submit-button-border-color: #7c3aed;
       --submit-button-background-color: #8b5cf6;
       --submit-button-color: #ffffff;
-      --graph-opacity: 0.9;
+      --graph-opacity: 0.28;
       --graph-filter: none;
     }
     body {
@@ -91,6 +91,7 @@ status-website:
     }
     nav img { border-radius: 50%; }
     article {
+      overflow: hidden;
       border-radius: 14px;
       border: 1px solid var(--card-border-color);
       border-left-width: 4px;
