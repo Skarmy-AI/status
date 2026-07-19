@@ -97,6 +97,9 @@ status-website:
       border-left-width: 4px;
       box-shadow: 0 6px 28px rgba(0, 0, 0, 0.35);
     }
+    article.graph {
+      background-image: linear-gradient(rgba(22, 19, 32, 0.8), rgba(22, 19, 32, 0.8)), var(--background) !important;
+    }
     .tag { border-radius: 999px; font-weight: 600; }
     a { color: #a78bfa; }
     a:hover { color: #c4b5fd; }
