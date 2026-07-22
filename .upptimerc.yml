@@ -38,6 +38,21 @@ status-website:
     <meta property="og:title" content="Skarmy Status — live uptime for skarmy.ai" />
     <meta property="og:description" content="Is Skarmy down? Live uptime status for skarmy.ai — website and API availability, incident history, and response times, checked every 5 minutes." />
     <meta property="og:image" content="https://raw.githubusercontent.com/Skarmy-AI/status/HEAD/assets/ball-512.png" />
+    <script>
+      // Upptime hardcodes a ✅ text node inside the "all systems operational" card;
+      // strip it as the client-side app renders.
+      addEventListener("DOMContentLoaded", function () {
+        new MutationObserver(function () {
+          document.querySelectorAll("article.up").forEach(function (el) {
+            el.childNodes.forEach(function (node) {
+              if (node.nodeType === 3 && node.textContent.indexOf("✅") !== -1) {
+                node.textContent = node.textContent.replace(/✅[\s ]*/g, "");
+              }
+            });
+          });
+        }).observe(document.body, { childList: true, subtree: true });
+      });
+    </script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","@id":"https://status.skarmy.ai/","url":"https://status.skarmy.ai/","name":"Skarmy Status","description":"Live uptime status for skarmy.ai — website and API availability, incident history, and response times, checked every 5 minutes.","about":{"@type":"Organization","name":"Skarmy","url":"https://www.skarmy.ai","logo":"https://www.skarmy.ai/assets/skarmy-logo.png","sameAs":["https://x.com/skarmyai"]},"isPartOf":{"@type":"WebSite","name":"Skarmy","url":"https://www.skarmy.ai"}}</script>
   css: |
     :root {
@@ -101,6 +116,6 @@ status-website:
       background-image: linear-gradient(rgba(22, 19, 32, 0.8), rgba(22, 19, 32, 0.8)), var(--background) !important;
     }
     .tag { border-radius: 999px; font-weight: 600; }
-    a { color: #a78bfa; }
-    a:hover { color: #c4b5fd; }
-    footer { opacity: 0.6; }
+    a { color: #ffffff; }
+    a:hover { color: rgba(255, 255, 255, 0.75); }
+    footer { display: none; }
