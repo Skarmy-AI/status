@@ -11,8 +11,8 @@ sites:
 status-website:
   cname: status.skarmy.ai
   name: Skarmy Status
-  logoUrl: https://raw.githubusercontent.com/Skarmy-AI/status/HEAD/assets/ball-192.png
-  favicon: https://raw.githubusercontent.com/Skarmy-AI/status/HEAD/assets/ball-192.png
+  logoUrl: https://status.skarmy.ai/ball-192.png
+  favicon: https://status.skarmy.ai/ball-192.png
   theme: dark
   introTitle: "Is Skarmy down?"
   introMessage: "Live status for [skarmy.ai](https://www.skarmy.ai). The Skarmy website and API are checked **every 5 minutes**; if anything is down, an incident appears here within minutes, with full uptime and response-time history below."
@@ -37,7 +37,7 @@ status-website:
     <meta property="og:url" content="https://status.skarmy.ai/" />
     <meta property="og:title" content="Skarmy Status — live uptime for skarmy.ai" />
     <meta property="og:description" content="Is Skarmy down? Live uptime status for skarmy.ai — website and API availability, incident history, and response times, checked every 5 minutes." />
-    <meta property="og:image" content="https://raw.githubusercontent.com/Skarmy-AI/status/HEAD/assets/ball-512.png" />
+    <meta property="og:image" content="https://status.skarmy.ai/ball-512.png" />
     <script>
       // Upptime hardcodes a ✅ text node inside the "all systems operational" card;
       // strip it as the client-side app renders.
@@ -53,7 +53,7 @@ status-website:
         }).observe(document.body, { childList: true, subtree: true });
       });
     </script>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","@id":"https://status.skarmy.ai/","url":"https://status.skarmy.ai/","name":"Skarmy Status","description":"Live uptime status for skarmy.ai — website and API availability, incident history, and response times, checked every 5 minutes.","about":{"@type":"Organization","name":"Skarmy","url":"https://www.skarmy.ai","logo":"https://www.skarmy.ai/assets/skarmy-logo.png","sameAs":["https://x.com/skarmyai"]},"isPartOf":{"@type":"WebSite","name":"Skarmy","url":"https://www.skarmy.ai"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","@id":"https://status.skarmy.ai/","url":"https://status.skarmy.ai/","name":"Skarmy Status","description":"Live uptime status for skarmy.ai — website and API availability, incident history, and response times, checked every 5 minutes.","about":{"@type":"Organization","name":"Skarmy","url":"https://www.skarmy.ai","logo":"https://status.skarmy.ai/ball-512.png","sameAs":["https://x.com/skarmyai"]},"isPartOf":{"@type":"WebSite","name":"Skarmy","url":"https://www.skarmy.ai"}}</script>
   css: |
     :root {
       --body-background-color: #0b0a12;
@@ -78,8 +78,6 @@ status-website:
       --submit-button-border-color: #7c3aed;
       --submit-button-background-color: #8b5cf6;
       --submit-button-color: #ffffff;
-      --graph-opacity: 0.28;
-      --graph-filter: none;
     }
     body {
       font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -104,18 +102,22 @@ status-website:
       backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--nav-border-bottom-color);
     }
-    nav img { border-radius: 50%; }
+    nav a.logo img { border-radius: 50% !important; }
     article {
-      overflow: hidden;
       border-radius: 14px;
       border: 1px solid var(--card-border-color);
       border-left-width: 4px;
       box-shadow: 0 6px 28px rgba(0, 0, 0, 0.35);
     }
     article.graph {
+      overflow: hidden;
       background-image: linear-gradient(rgba(22, 19, 32, 0.8), rgba(22, 19, 32, 0.8)), var(--background) !important;
+      background-size: cover, contain !important;
+      background-position: center, center right !important;
+      background-repeat: no-repeat, no-repeat !important;
     }
     .tag { border-radius: 999px; font-weight: 600; }
     a { color: #ffffff; }
     a:hover { color: rgba(255, 255, 255, 0.75); }
+    main a { text-decoration: underline !important; }
     footer { display: none; }
