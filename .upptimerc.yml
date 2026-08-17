@@ -14,12 +14,14 @@ sites:
 
 status-website:
   cname: status.skarmy.ai
-  name: Skarmy Status
-  logoUrl: https://raw.githubusercontent.com/Skarmy-AI/status/HEAD/assets/ball-192.png
-  favicon: https://raw.githubusercontent.com/Skarmy-AI/status/HEAD/assets/ball-192.png
+  name: "Is Skarmy down? | Skarmy Status"
+  logoUrl: https://status.skarmy.ai/ball-192.png
+  favicon: https://status.skarmy.ai/ball-192.png
+  faviconSvg: https://status.skarmy.ai/ball.svg
+  hideNavTitle: true
   theme: dark
   introTitle: "Is Skarmy down?"
-  introMessage: "Live status for [skarmy.ai](https://www.skarmy.ai). The Skarmy website and API are checked **every 5 minutes**; if anything is down, an incident appears here within minutes, with full uptime and response-time history below."
+  introMessage: 'Live uptime for [skarmy.ai](https://www.skarmy.ai) and the Skarmy AI platform. We check the website and API **every 5 minutes**, so this is the fastest place to answer **"is Skarmy down?"** or **"is Skarmy AI down?"** — with full history and response times below.'
   navbar:
     - title: Status
       href: /
@@ -27,21 +29,46 @@ status-website:
       href: https://www.skarmy.ai
   metaTags:
     - name: description
-      content: "Is Skarmy down? Live uptime status for skarmy.ai — website and API availability, incident history, and response times, checked every 5 minutes."
+      content: "Is Skarmy down? Is Skarmy AI down? Check the live uptime status for skarmy.ai — website and API availability, incident history, and response times, checked every 5 minutes."
     - name: robots
       content: "index, follow"
+    - name: keywords
+      content: "is skarmy down, is skarmy ai down, skarmy status, skarmy uptime, skarmy ai status, skarmy down detector"
+    - name: color-scheme
+      content: "dark"
+    - name: theme-color
+      content: "#000000"
     - name: twitter:card
       content: summary
     - name: twitter:site
       content: "@skarmyai"
+    - name: twitter:title
+      content: "Is Skarmy down? | Skarmy AI status & uptime"
+    - name: twitter:description
+      content: "Is Skarmy down? Is Skarmy AI down? Check the live uptime status for skarmy.ai — website and API availability, incident history, and response times, checked every 5 minutes."
+    - name: twitter:image
+      content: "https://status.skarmy.ai/ball-512.png"
+    - name: apple-mobile-web-app-title
+      content: "Skarmy Status"
   customHeadHtml: |
+    <link rel="preconnect" href="https://www.skarmy.ai" crossorigin />
+    <link rel="preload" href="https://www.skarmy.ai/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="https://www.skarmy.ai/fonts/GeistMono-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="canonical" href="https://status.skarmy.ai/" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="apple-touch-icon" href="https://status.skarmy.ai/ball-192.png" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Skarmy" />
     <meta property="og:url" content="https://status.skarmy.ai/" />
-    <meta property="og:title" content="Skarmy Status — live uptime for skarmy.ai" />
-    <meta property="og:description" content="Is Skarmy down? Live uptime status for skarmy.ai — website and API availability, incident history, and response times, checked every 5 minutes." />
-    <meta property="og:image" content="https://raw.githubusercontent.com/Skarmy-AI/status/HEAD/assets/ball-512.png" />
+    <meta property="og:title" content="Is Skarmy down? | Skarmy AI status & uptime" />
+    <meta property="og:description" content="Is Skarmy down? Is Skarmy AI down? Check the live uptime status for skarmy.ai — website and API availability, incident history, and response times, checked every 5 minutes." />
+    <meta property="og:image" content="https://status.skarmy.ai/ball-512.png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="Skarmy status ball logo" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","@id":"https://status.skarmy.ai/","url":"https://status.skarmy.ai/","name":"Skarmy Status","description":"Is Skarmy down? Is Skarmy AI down? Check the live uptime status for skarmy.ai — website and API availability, incident history, and response times, checked every 5 minutes.","about":{"@type":"Organization","name":"Skarmy","url":"https://www.skarmy.ai","logo":"https://status.skarmy.ai/ball-512.png","sameAs":["https://x.com/skarmyai"]},"isPartOf":{"@type":"WebSite","name":"Skarmy","url":"https://www.skarmy.ai"}}</script>
     <script>
       // Upptime hardcodes a ✅ text node inside the "all systems operational" card;
       // strip it as the client-side app renders.
@@ -50,76 +77,202 @@ status-website:
           document.querySelectorAll("article.up").forEach(function (el) {
             el.childNodes.forEach(function (node) {
               if (node.nodeType === 3 && node.textContent.indexOf("✅") !== -1) {
-                node.textContent = node.textContent.replace(/✅[\s ]*/g, "");
+                node.textContent = node.textContent.replace(/✅[\s\u00A0]*/g, "");
               }
             });
           });
         }).observe(document.body, { childList: true, subtree: true });
       });
     </script>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","@id":"https://status.skarmy.ai/","url":"https://status.skarmy.ai/","name":"Skarmy Status","description":"Live uptime status for skarmy.ai — website and API availability, incident history, and response times, checked every 5 minutes.","about":{"@type":"Organization","name":"Skarmy","url":"https://www.skarmy.ai","logo":"https://www.skarmy.ai/assets/skarmy-logo.png","sameAs":["https://x.com/skarmyai"]},"isPartOf":{"@type":"WebSite","name":"Skarmy","url":"https://www.skarmy.ai"}}</script>
   css: |
+    @font-face { font-family: "Geist"; src: url("https://www.skarmy.ai/fonts/Geist-Variable.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
+    @font-face { font-family: "Geist Mono"; src: url("https://www.skarmy.ai/fonts/GeistMono-Variable.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
     :root {
-      --body-background-color: #0b0a12;
-      --body-text-color: #eceaf6;
-      --card-background-color: #161320;
-      --nav-background-color: #0e0c16;
-      --nav-border-bottom-color: #231e33;
-      --nav-current-border-bottom-color: #a855f7;
-      --card-border-color: #262038;
+      --body-background-color: #000000;
+      --body-text-color: #ffffff;
+      --card-background-color: #141414;
+      --nav-background-color: rgba(5, 5, 5, 0.65);
+      --nav-border-bottom-color: rgba(255, 255, 255, 0.07);
+      --nav-current-border-bottom-color: #ffffff;
+      --card-border-color: rgba(255, 255, 255, 0.1);
       --down-border-left-color: #ff3b6b;
-      --down-background-color: #2a0f1a;
+      --down-background-color: rgba(255, 59, 107, 0.1);
       --degraded-border-left-color: #f7b731;
       --up-border-left-color: #2dd4a8;
-      --tag-color: #07120e;
+      --tag-color: #000000;
       --tag-up-background-color: #2dd4a8;
       --tag-down-background-color: #ff3b6b;
       --tag-degraded-background-color: #f7b731;
       --change-background-color: #f7b731;
-      --error-button-border-color: #7c3aed;
-      --error-button-background-color: #8b5cf6;
-      --error-button-color: #ffffff;
-      --submit-button-border-color: #7c3aed;
-      --submit-button-background-color: #8b5cf6;
-      --submit-button-color: #ffffff;
-      --graph-opacity: 0.28;
-      --graph-filter: none;
+      --error-button-border-color: #ffffff;
+      --error-button-background-color: #ffffff;
+      --error-button-color: #000000;
+      --submit-button-border-color: #ffffff;
+      --submit-button-background-color: #ffffff;
+      --submit-button-color: #000000;
+      --graph-overlay: rgba(0, 0, 0, 0.78);
     }
     body {
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
+      background-color: #000000;
       background-image:
-        radial-gradient(1100px 480px at 82% -12%, rgba(124, 58, 237, 0.20), transparent 60%),
-        radial-gradient(900px 420px at 8% -14%, rgba(255, 45, 120, 0.14), transparent 60%);
+        radial-gradient(80rem 50rem at 70% 0%, rgba(255, 80, 90, 0.18), transparent 55%),
+        radial-gradient(60rem 40rem at 20% 0%, rgba(124, 58, 237, 0.14), transparent 55%);
       background-repeat: no-repeat;
+      color: #ffffff;
+      padding-top: 5rem;
     }
-    h1 {
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      background: linear-gradient(92deg, #ff5db1 0%, #a78bfa 48%, #22d3ee 100%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      display: inline-block;
+    h1, h2, h3, h4, h5, h6 { margin: 0 0 0.5em 0; font-weight: 600; line-height: 1.2; color: #ffffff; }
+    header { text-align: center !important; padding: 2rem 0 1rem 0 !important; }
+    header h1 {
+      font-size: clamp(34px, 8.5vw, 72px) !important;
+      font-weight: 700 !important;
+      letter-spacing: -0.055em !important;
+      line-height: 0.96 !important;
+      color: #ffffff !important;
+      text-shadow: 0 2px 40px rgba(0, 0, 0, 0.35) !important;
+      background: none !important;
+      -webkit-background-clip: initial !important;
+      background-clip: initial !important;
+      -webkit-text-fill-color: initial !important;
     }
-    h2, h3 { letter-spacing: -0.01em; }
-    .lead { opacity: 0.82; max-width: 46rem; }
+    p.lead {
+      font-size: clamp(17px, 2.5vw, 22px) !important;
+      line-height: 1.45 !important;
+      color: rgba(255, 255, 255, 0.85) !important;
+      max-width: 46rem !important;
+      margin: 1.25rem auto 0 auto !important;
+      text-align: center !important;
+    }
     nav {
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--nav-border-bottom-color);
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      z-index: 50 !important;
+      height: 4rem !important;
+      margin-bottom: 0 !important;
+      padding: 0 1.25rem !important;
+      overflow-x: visible !important;
+      white-space: nowrap !important;
+      background-color: rgba(5, 5, 5, 0.65) !important;
+      -webkit-backdrop-filter: blur(20px) saturate(1.4) !important;
+      backdrop-filter: blur(20px) saturate(1.4) !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07) !important;
     }
-    nav img { border-radius: 50%; }
+    nav .container { max-width: 88rem; margin: 0 auto; height: 100%; }
+    nav a.logo {
+      display: flex !important;
+      align-items: center !important;
+      gap: 0.625rem !important;
+      float: none !important;
+      margin-right: 0 !important;
+      padding: 0.5rem 0 !important;
+      font-size: 19px !important;
+      font-weight: 700 !important;
+      letter-spacing: -0.055em !important;
+      line-height: 0.96 !important;
+      color: #ffffff !important;
+    }
+    nav a.logo img { height: 1.75rem !important; width: auto !important; border-radius: 50% !important; margin-right: 0 !important; }
+    nav ul { justify-content: flex-end !important; gap: 0.125rem !important; }
+    nav a {
+      padding: 0.5rem 0.875rem !important;
+      font-size: 15px !important;
+      font-weight: 500 !important;
+      color: rgba(255, 255, 255, 0.85) !important;
+      border-radius: 9999px !important;
+      transition: color .2s ease, background-color .2s ease !important;
+    }
+    nav a:hover { color: #ffffff !important; background-color: rgba(255, 255, 255, 0.08) !important; text-decoration: none !important; }
+    nav [aria-current] { border-bottom: 0 !important; background-color: rgba(255, 255, 255, 0.12) !important; color: #ffffff !important; }
+    .container { max-width: 56rem; margin: 0 auto; padding: 0 1.5rem; }
+    main a { color: #ffffff; text-decoration: underline; text-underline-offset: 0.15em; }
+    main a:hover { color: rgba(255, 255, 255, 0.75); }
     article {
-      overflow: hidden;
-      border-radius: 14px;
-      border: 1px solid var(--card-border-color);
-      border-left-width: 4px;
-      box-shadow: 0 6px 28px rgba(0, 0, 0, 0.35);
+      position: relative;
+      border-radius: 1.25rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: #141414;
+      box-shadow: 0 18px 44px rgba(0, 0, 0, 0.45), 0 2px 5px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      padding: 1.25rem 1.5rem;
     }
+    article + article { margin-top: 0.75rem; }
+    article h4 { font-size: 1.125rem; font-weight: 600; margin: 0 0 0.25rem 0; }
+    article h4 a { text-decoration: none !important; color: #ffffff; }
+    article h4 img.icon { height: 1.25rem !important; width: 1.25rem !important; margin-right: 0.5rem !important; vertical-align: -0.2rem !important; }
+    article div { font-size: 0.875rem; color: rgba(255, 255, 255, 0.65); line-height: 1.5; }
+    article .data { font-weight: 600; color: #ffffff; background: rgba(255, 255, 255, 0.08); border-radius: 0.5rem; padding: 0.25rem 0.5rem; margin-left: 0.25rem; }
     article.graph {
-      background-image: linear-gradient(rgba(22, 19, 32, 0.8), rgba(22, 19, 32, 0.8)), var(--background) !important;
+      overflow: hidden;
+      background-image: linear-gradient(var(--graph-overlay), var(--graph-overlay)), var(--background) !important;
+      background-size: cover, contain !important;
+      background-position: center, center right !important;
+      background-repeat: no-repeat, no-repeat !important;
     }
-    .tag { border-radius: 999px; font-weight: 600; }
-    a { color: #ffffff; }
-    a:hover { color: rgba(255, 255, 255, 0.75); }
-    footer { display: none; }
+    article.up {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 4rem;
+      color: #2dd4a8;
+      font-weight: 600;
+      font-size: 1.1rem;
+      background: rgba(45, 212, 168, 0.08);
+      border-color: rgba(45, 212, 168, 0.2);
+      border-left: 4px solid var(--up-border-left-color);
+    }
+    article.down-active { background: rgba(255, 59, 107, 0.1) !important; border-color: rgba(255, 59, 107, 0.25) !important; }
+    article.degraded { background: rgba(247, 183, 49, 0.08); border-color: rgba(247, 183, 49, 0.2); }
+    .tag { border-radius: 999px; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; padding: 0.25rem 0.625rem; color: #000000; }
+    h2 { font-size: 1.5rem !important; font-weight: 700 !important; letter-spacing: -0.02em !important; margin-top: 3rem !important; margin-bottom: 1rem !important; color: #ffffff !important; }
+    .f.changed { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.5rem; }
+    .f.changed h2 { margin: 0 !important; }
+    form.r { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    form.r input { display: none; }
+    form.r label {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 9999px;
+      padding: 0.4rem 0.9rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.65);
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      cursor: pointer;
+      transition: color .15s ease, background-color .15s ease, border-color .15s ease;
+      margin-left: 0 !important;
+    }
+    form.r input:checked + label { background: #ffffff; color: #000000; border-color: #ffffff; font-weight: 600; }
+    form.r label:hover { color: #ffffff; background: rgba(255, 255, 255, 0.1); }
+    a.error-button, .submit-button { border-radius: 9999px !important; font-weight: 600 !important; }
+    footer:not(.site-footer) { display: none !important; }
+    .site-footer { border-top: 1px solid rgba(255, 255, 255, 0.08); padding: 3rem 0 2rem 0; margin-top: 4rem; }
+    .site-footer-inner { max-width: 56rem; margin: 0 auto; padding: 0 1.5rem; display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+    .footer-logo { display: flex; align-items: center; gap: 0.625rem; font-size: 19px; font-weight: 700; letter-spacing: -0.055em; color: #ffffff; text-decoration: none; }
+    .footer-logo img { height: 1.75rem; width: auto; border-radius: 50%; }
+    .footer-tagline { color: rgba(255, 255, 255, 0.5); font-size: 0.95rem; margin: 0; }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1.25rem; }
+    .footer-links a { color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 0.95rem; transition: color .2s; }
+    .footer-links a:hover { color: #ffffff; }
+    .footer-copy { color: rgba(255, 255, 255, 0.4); font-size: 0.85rem; margin: 1.5rem 0 0 0; }
+  customFootHtml: |
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <a href="https://www.skarmy.ai" class="footer-logo">
+          <img src="https://status.skarmy.ai/ball-192.png" alt="" width="28" height="28" />
+          <span>Skarmy</span>
+        </a>
+        <p class="footer-tagline">The AI company builder</p>
+        <div class="footer-links">
+          <a href="https://www.skarmy.ai">Home</a>
+          <a href="https://app.skarmy.ai">Get started</a>
+          <a href="https://docs.skarmy.ai">Docs</a>
+          <a href="https://www.skarmy.ai/community">Community</a>
+          <a href="https://x.com/skarmyai">X</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Skarmy. San Francisco, CA.</p>
+      </div>
+    </footer>
