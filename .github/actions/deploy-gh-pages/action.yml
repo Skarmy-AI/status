@@ -1,0 +1,31 @@
+name: Deploy Upptime site to GitHub Pages
+description: Deploy the Sapper export to GitHub Pages with Upptime defaults
+
+inputs:
+  github-token:
+    description: GitHub token for deployment
+    required: true
+  publish-dir:
+    default: site/status-page/__sapper__/export/
+    description: Directory to publish
+    required: false
+  user-name:
+    default: Upptime Bot
+    description: Git user name for the deploy commit
+    required: false
+  user-email:
+    default: 73812536+upptime-bot@users.noreply.github.com
+    description: Git user email for the deploy commit
+    required: false
+
+runs:
+  using: composite
+  steps:
+    - name: GitHub Pages Deploy
+      uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453 # v4
+      with:
+        github_token: ${{ inputs.github-token }}
+        publish_dir: ${{ inputs.publish-dir }}
+        force_orphan: "false"
+        user_name: ${{ inputs.user-name }}
+        user_email: ${{ inputs.user-email }}

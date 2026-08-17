@@ -1,4 +1,8 @@
 # Upptime config — https://upptime.js.org/docs/configuration
+#
+# NOTE: The GitHub Actions workflow files in this repo are hand-maintained and pinned to
+# commit SHAs. Do not run Upptime's update-template command; it will overwrite those pins.
+
 owner: Skarmy-AI
 repo: status
 
