@@ -30,9 +30,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: ./.github/actions/checkout-repo
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
-          github-token: ${{ secrets.GH_PAT || github.token }}
+          ref: ${{ github.head_ref || github.ref_name }}
+          token: ${{ secrets.GH_PAT || github.token }}
       - name: Update response time
         uses: upptime/uptime-monitor@8575473b4713da59d62f8d0f7cb5e4dfb86d55b7 # v1.43.14
         with:
