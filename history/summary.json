@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 307,
+    "time": 308,
     "timeDay": 386,
-    "timeWeek": 277,
-    "timeMonth": 367,
-    "timeYear": 307,
+    "timeWeek": 289,
+    "timeMonth": 368,
+    "timeYear": 308,
     "dailyMinutesDown": {}
   },
   {
@@ -22,19 +22,19 @@
     "url": "https://restart.new/oembed?url=https%3A%2F%2Frestart.new%2F&format=json",
     "icon": "https://icons.duckduckgo.com/ip3/restart.new.ico",
     "slug": "skarmy-o-embed-api",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 242,
-    "timeDay": 181,
-    "timeWeek": 180,
-    "timeMonth": 292,
-    "timeYear": 242,
+    "status": "up",
+    "uptime": "99.98%",
+    "uptimeDay": "99.22%",
+    "uptimeWeek": "99.89%",
+    "uptimeMonth": "99.97%",
+    "uptimeYear": "99.98%",
+    "time": 245,
+    "timeDay": 245,
+    "timeWeek": 202,
+    "timeMonth": 294,
+    "timeYear": 245,
     "dailyMinutesDown": {
-      "2026-09-07": 0
+      "2026-09-07": 11
     }
   }
 ]
