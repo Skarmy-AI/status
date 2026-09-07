@@ -7,21 +7,21 @@ owner: Skarmy-AI
 repo: status
 
 sites:
-  - name: Skarmy Website
+  - name: Restart Website
     url: https://restart.new
-  - name: Skarmy oEmbed API
+  - name: Restart oEmbed API
     url: https://restart.new/oembed?url=https%3A%2F%2Frestart.new%2F&format=json
 
 status-website:
   cname: status.restart.new
-  name: "Is Skarmy down? | Skarmy Status"
+  name: "Is Restart down? | Restart Status"
   logoUrl: https://status.restart.new/ball-192.png
   favicon: https://status.restart.new/ball-192.png
   faviconSvg: https://status.restart.new/ball.svg
   hideNavTitle: true
   theme: dark
-  introTitle: "Is Skarmy down?"
-  introMessage: 'Live uptime for [restart.new](https://restart.new) and the Skarmy AI platform. We check the website and API **every 5 minutes**, so this is the fastest place to answer **"is Skarmy down?"** or **"is Skarmy AI down?"** — with full history and response times below.'
+  introTitle: "Is Restart down?"
+  introMessage: 'Live uptime for [restart.new](https://restart.new), the AI company builder. We check the website and API **every 5 minutes**, so this is the fastest place to answer **"is Restart down?"** or **"is restart.new down?"** — with full history and response times below.'
   navbar:
     - title: Status
       href: /
@@ -29,11 +29,11 @@ status-website:
       href: https://restart.new
   metaTags:
     - name: description
-      content: "Is Skarmy down? Is Skarmy AI down? Check the live uptime status for skarmy.ai — website and API availability, incident history, and response times, checked every 5 minutes."
+      content: "Is Restart down? Check the live uptime status for restart.new — website and API availability, incident history, and response times, checked every 5 minutes."
     - name: robots
       content: "index, follow"
     - name: keywords
-      content: "is skarmy down, is skarmy ai down, skarmy status, skarmy uptime, skarmy ai status, skarmy down detector"
+      content: "is restart down, is restart.new down, restart status, restart uptime, restart ai status, restart down detector"
     - name: color-scheme
       content: "dark"
     - name: theme-color
@@ -41,34 +41,34 @@ status-website:
     - name: twitter:card
       content: summary
     - name: twitter:site
-      content: "@skarmyai"
+      content: "@SimonLivva"
     - name: twitter:title
-      content: "Is Skarmy down? | Skarmy AI status & uptime"
+      content: "Is Restart down? | Restart status & uptime"
     - name: twitter:description
-      content: "Is Skarmy down? Is Skarmy AI down? Check the live uptime status for skarmy.ai — website and API availability, incident history, and response times, checked every 5 minutes."
+      content: "Is Restart down? Check the live uptime status for restart.new — website and API availability, incident history, and response times, checked every 5 minutes."
     - name: twitter:image
       content: "https://status.restart.new/ball-512.png"
     - name: apple-mobile-web-app-title
-      content: "Skarmy Status"
+      content: "Restart Status"
   customHeadHtml: |
-    <link rel="preconnect" href="https://www.skarmy.ai" crossorigin />
-    <link rel="preload" href="https://www.skarmy.ai/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-    <link rel="preload" href="https://www.skarmy.ai/fonts/GeistMono-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://restart.new" crossorigin />
+    <link rel="preload" href="https://restart.new/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="https://restart.new/fonts/GeistMono-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="canonical" href="https://status.restart.new/" />
     <meta name="color-scheme" content="dark" />
     <meta name="theme-color" content="#000000" />
     <link rel="apple-touch-icon" href="https://status.restart.new/ball-192.png" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content="Skarmy" />
+    <meta property="og:site_name" content="Restart" />
     <meta property="og:url" content="https://status.restart.new/" />
-    <meta property="og:title" content="Is Skarmy down? | Skarmy AI status & uptime" />
-    <meta property="og:description" content="Is Skarmy down? Is Skarmy AI down? Check the live uptime status for skarmy.ai — website and API availability, incident history, and response times, checked every 5 minutes." />
+    <meta property="og:title" content="Is Restart down? | Restart status & uptime" />
+    <meta property="og:description" content="Is Restart down? Check the live uptime status for restart.new — website and API availability, incident history, and response times, checked every 5 minutes." />
     <meta property="og:image" content="https://status.restart.new/ball-512.png" />
     <meta property="og:image:width" content="512" />
     <meta property="og:image:height" content="512" />
-    <meta property="og:image:alt" content="Skarmy status ball logo" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","@id":"https://status.restart.new/","url":"https://status.restart.new/","name":"Skarmy Status","description":"Is Skarmy down? Is Skarmy AI down? Check the live uptime status for skarmy.ai — website and API availability, incident history, and response times, checked every 5 minutes.","about":{"@type":"Organization","name":"Skarmy","url":"https://www.skarmy.ai","logo":"https://status.restart.new/ball-512.png","sameAs":["https://x.com/skarmyai"]},"isPartOf":{"@type":"WebSite","name":"Skarmy","url":"https://www.skarmy.ai"}}</script>
+    <meta property="og:image:alt" content="Restart status logo" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","@id":"https://status.restart.new/","url":"https://status.restart.new/","name":"Restart Status","description":"Is Restart down? Check the live uptime status for restart.new — website and API availability, incident history, and response times, checked every 5 minutes.","about":{"@type":"Organization","@id":"https://restart.new/#organization","name":"Restart","alternateName":["Skarmy","Restart AI"],"url":"https://restart.new","logo":"https://restart.new/assets/skarmy-logo.png"},"isPartOf":{"@type":"WebSite","@id":"https://restart.new/#website","name":"Restart","url":"https://restart.new"}}</script>
     <script>
       // Upptime hardcodes a ✅ text node inside the "all systems operational" card;
       // strip it as the client-side app renders.
@@ -85,8 +85,8 @@ status-website:
       });
     </script>
   css: |
-    @font-face { font-family: "Geist"; src: url("https://www.skarmy.ai/fonts/Geist-Variable.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
-    @font-face { font-family: "Geist Mono"; src: url("https://www.skarmy.ai/fonts/GeistMono-Variable.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
+    @font-face { font-family: "Geist"; src: url("https://restart.new/fonts/Geist-Variable.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
+    @font-face { font-family: "Geist Mono"; src: url("https://restart.new/fonts/GeistMono-Variable.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
     :root {
       --body-background-color: #000000;
       --body-text-color: #ffffff;
@@ -261,18 +261,18 @@ status-website:
   customFootHtml: |
     <footer class="site-footer">
       <div class="site-footer-inner">
-        <a href="https://www.skarmy.ai" class="footer-logo">
+        <a href="https://restart.new" class="footer-logo">
           <img src="https://status.restart.new/ball-192.png" alt="" width="28" height="28" />
-          <span>Skarmy</span>
+          <span>Restart</span>
         </a>
         <p class="footer-tagline">The AI company builder</p>
         <div class="footer-links">
-          <a href="https://www.skarmy.ai">Home</a>
-          <a href="https://app.skarmy.ai">Get started</a>
-          <a href="https://docs.skarmy.ai">Docs</a>
-          <a href="https://www.skarmy.ai/community">Community</a>
-          <a href="https://x.com/skarmyai">X</a>
+          <a href="https://restart.new">Home</a>
+          <a href="https://app.restart.new">Get started</a>
+          <a href="https://docs.restart.new">Docs</a>
+          <a href="https://restart.new/community">Community</a>
+          <a href="https://x.com/SimonLivva">X</a>
         </div>
-        <p class="footer-copy">&copy; 2026 Skarmy. San Francisco, CA.</p>
+        <p class="footer-copy">&copy; 2026 Restart. San Francisco, CA.</p>
       </div>
     </footer>
