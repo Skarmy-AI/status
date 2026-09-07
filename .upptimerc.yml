@@ -13,11 +13,11 @@ sites:
     url: https://restart.new/oembed?url=https%3A%2F%2Frestart.new%2F&format=json
 
 status-website:
-  cname: status.restart.new
+  cname: status.skarmy.ai
   name: "Is Skarmy down? | Skarmy Status"
-  logoUrl: https://status.restart.new/ball-192.png
-  favicon: https://status.restart.new/ball-192.png
-  faviconSvg: https://status.restart.new/ball.svg
+  logoUrl: https://status.skarmy.ai/ball-192.png
+  favicon: https://status.skarmy.ai/ball-192.png
+  faviconSvg: https://status.skarmy.ai/ball.svg
   hideNavTitle: true
   theme: dark
   introTitle: "Is Skarmy down?"
@@ -47,28 +47,28 @@ status-website:
     - name: twitter:description
       content: "Is Skarmy down? Is Skarmy AI down? Check the live uptime status for skarmy.ai — website and API availability, incident history, and response times, checked every 5 minutes."
     - name: twitter:image
-      content: "https://status.restart.new/ball-512.png"
+      content: "https://status.skarmy.ai/ball-512.png"
     - name: apple-mobile-web-app-title
       content: "Skarmy Status"
   customHeadHtml: |
     <link rel="preconnect" href="https://www.skarmy.ai" crossorigin />
     <link rel="preload" href="https://www.skarmy.ai/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" href="https://www.skarmy.ai/fonts/GeistMono-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-    <link rel="canonical" href="https://status.restart.new/" />
+    <link rel="canonical" href="https://status.skarmy.ai/" />
     <meta name="color-scheme" content="dark" />
     <meta name="theme-color" content="#000000" />
-    <link rel="apple-touch-icon" href="https://status.restart.new/ball-192.png" />
+    <link rel="apple-touch-icon" href="https://status.skarmy.ai/ball-192.png" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Skarmy" />
-    <meta property="og:url" content="https://status.restart.new/" />
+    <meta property="og:url" content="https://status.skarmy.ai/" />
     <meta property="og:title" content="Is Skarmy down? | Skarmy AI status & uptime" />
     <meta property="og:description" content="Is Skarmy down? Is Skarmy AI down? Check the live uptime status for skarmy.ai — website and API availability, incident history, and response times, checked every 5 minutes." />
-    <meta property="og:image" content="https://status.restart.new/ball-512.png" />
+    <meta property="og:image" content="https://status.skarmy.ai/ball-512.png" />
     <meta property="og:image:width" content="512" />
     <meta property="og:image:height" content="512" />
     <meta property="og:image:alt" content="Skarmy status ball logo" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","@id":"https://status.restart.new/","url":"https://status.restart.new/","name":"Skarmy Status","description":"Is Skarmy down? Is Skarmy AI down? Check the live uptime status for skarmy.ai — website and API availability, incident history, and response times, checked every 5 minutes.","about":{"@type":"Organization","name":"Skarmy","url":"https://www.skarmy.ai","logo":"https://status.restart.new/ball-512.png","sameAs":["https://x.com/skarmyai"]},"isPartOf":{"@type":"WebSite","name":"Skarmy","url":"https://www.skarmy.ai"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","@id":"https://status.skarmy.ai/","url":"https://status.skarmy.ai/","name":"Skarmy Status","description":"Is Skarmy down? Is Skarmy AI down? Check the live uptime status for skarmy.ai — website and API availability, incident history, and response times, checked every 5 minutes.","about":{"@type":"Organization","name":"Skarmy","url":"https://www.skarmy.ai","logo":"https://status.skarmy.ai/ball-512.png","sameAs":["https://x.com/skarmyai"]},"isPartOf":{"@type":"WebSite","name":"Skarmy","url":"https://www.skarmy.ai"}}</script>
     <script>
       // Upptime hardcodes a ✅ text node inside the "all systems operational" card;
       // strip it as the client-side app renders.
@@ -262,7 +262,7 @@ status-website:
     <footer class="site-footer">
       <div class="site-footer-inner">
         <a href="https://www.skarmy.ai" class="footer-logo">
-          <img src="https://status.restart.new/ball-192.png" alt="" width="28" height="28" />
+          <img src="https://status.skarmy.ai/ball-192.png" alt="" width="28" height="28" />
           <span>Skarmy</span>
         </a>
         <p class="footer-tagline">The AI company builder</p>
